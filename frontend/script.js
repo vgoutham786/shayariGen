@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const topic = topicInput.value.trim();
 
         try {
-            const response = await fetch(`http://localhost:3000/generate-shayari?type=${encodeURIComponent(type)}&topic=${encodeURIComponent(topic)}`);;
+            const response = await fetch(`/generate-shayari?type=${encodeURIComponent(type)}&topic=${encodeURIComponent(topic)}`);;
             if (response.ok) {
                 const data = await response.json();
                 shayariOutput.innerHTML = `<p>${data.shayari}</p>`;
