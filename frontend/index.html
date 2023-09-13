@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayari Generator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>Shayari Generator</h1>
+    <label for="type">Type:</label>
+    <select id="type" name="type">
+        <option value="Shayaris">Shayaris</option>
+        <option value="Jokes">Jokes</option>
+        <option value="Stories">Stories</option>
+        <!-- Add more options as needed -->
+    </select>
+    <label for="topic">Topic:</label>
+    <input type="text" id="topic" name="topic" placeholder="Enter the topic">
+    <button id="generateButton">Generate </button>
+    <div id="shayariOutput"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
